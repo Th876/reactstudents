@@ -66,14 +66,14 @@ function App() {
   ]
   });
 
-  // console.log(studentData.students.scores);
+  console.log(studentData.students);
   return (
     
     //Map through students array
     studentData.students.map((student, index) => {
     return (
-      <div className='App'>
-      <Students key={index} name={student.name} bio={student.bio} scores={student.scores}/>
+      <div key={index} className='App'>
+      <Students name={student.name} bio={student.bio} scores={student.scores}/>
       </div>
       )
   })
